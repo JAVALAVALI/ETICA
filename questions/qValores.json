@@ -1,0 +1,151 @@
+[
+    {
+        "q": "Carrera: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Ingeniería Mecánica Eléctrica.",
+            "Ingeniería Industrial.",
+            "I.T.S.E.",
+            "Licenciatura en Tecnología.",
+            "Medicina Veterinaria y Zootecnia.",
+            "Ingeniería Agrícola.",
+            "Licenciatura en Administración.",
+            "Licenciatura en Contaduría.",
+            "Licenciatura en Informática.",
+            "Diseño y Comunicación Visual"
+        ]
+    },
+    {
+        "q": "Semestre: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Edad: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Sexo: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Hombre",
+            "Mujer"
+        ]
+    },
+    {
+        "q": "Género: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Masculino",
+            "Femenino",
+            "No binario",
+            "Género fluido",
+            "Género queer",
+            "Bigénero",
+            "Transexual",
+            "Agénero",
+            "Pangénero",
+            "Genderqueer",
+            "otro"
+        ]
+    },
+    {
+        "q": "Lugar de nacimiento: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Lugar de residencia: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué consideraria un valor? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué valores tiene usted como principio? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué valores admira mas en otras personas? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué tipos de valores logras identificar en tu entorno? (Menciona 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Dónde se aprenden los valores?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué tipos de valores aplicas más? (menciona tres): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cómo se relacionan con tu futuro?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Influyen los valores en la formación de la identidad de una persona?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Es importante transmitir valores a las generaciones futuras?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ]
+    },
+    {
+        "q": "¿Cómo se deberían de transmitir?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Considera que existe una relación entre los valores y la felicidad?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cuáles son los valores importantes en el contexto académico? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Deberíamos considerar como valor hacer trampa en un examen?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    }
+]

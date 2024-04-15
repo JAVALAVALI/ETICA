@@ -1,0 +1,183 @@
+[
+    {
+        "q": "Carrera: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Ingeniería Mecánica Eléctrica.",
+            "Ingeniería Industrial.",
+            "I.T.S.E.",
+            "Licenciatura en Tecnología.",
+            "Medicina Veterinaria y Zootecnia.",
+            "Ingeniería Agrícola.",
+            "Licenciatura en Administración.",
+            "Licenciatura en Contaduría.",
+            "Licenciatura en Informática.",
+            "Diseño y Comunicación Visual"
+        ]
+    },
+    {
+        "q": "Semestre: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Edad: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Sexo: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Hombre",
+            "Mujer"
+        ]
+    },
+    {
+        "q": "Género: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Masculino",
+            "Femenino",
+            "No binario",
+            "Género fluido",
+            "Género queer",
+            "Bigénero",
+            "Transexual",
+            "Agénero",
+            "Pangénero",
+            "Genderqueer",
+            "otro"
+        ]
+    },
+    {
+        "q": "Lugar de nacimiento: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Lugar de residencia: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Leer primero: La ética es una disciplina de la filosofía que estudia el comportamiento humano y su relación con las nociones del bien y del mal, los preceptos morales, el deber, la felicidad y el bienestar común. <br> <br> A partir de lo anterior podría reconocer una situación ética en su vida cotidiana: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ]
+    },
+    {
+        "q": "Podría explicar lo bueno en tres palabras: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Podría explicar lo malo en tres palabras: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Usted piensa en su vida cotidiana sobre ¿qué es lo bueno?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cuántas veces tiene este pensamiento al día?: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Usted piensa en su vida cotidiana sobre ¿qué es lo malo?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cuántas veces tiene este pensamiento al día?: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Si usted encuentra una cartera con dinero en la calle, ¿Qué hace?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "a) Se la queda.",
+            "b) Busca devolverla",
+            "c) Se la da a: 1. Policía 2. A una gente supervisora 3. Busca una comisaría",
+            "d) Si no hay forma de devolverla en el lugar que la encontró,  ¿Qué hace?",
+            "e) ¿Busca entre las identificaciones de la cartera una dirección para regresarla? (SI, NO)",
+            "f) Al final se la queda."
+        ],
+        "compuesta": {
+            "q": "¿Qué hace?",
+            "cerrada": false,
+            "type": "text"
+        }
+    },
+    {
+        "q": "Qué opina de la frase: “El fin justifica los medios”: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            " a) Es totalmente buena",
+            " b) es totalmente mala",
+            " c) depende del momento y lugar"
+        ]
+    },
+    {
+        "q": "¿Acepta el uso de violencia en defensa personal?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "En un mundo donde todos tuviéramos armas ¿Realmente podríamos defendernos?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ],
+        "compuesta": {
+            "q": "¿Por qué?",
+            "cerrada": false,
+            "type": "text"
+        }
+    },
+    {
+        "q": "¿Qué opina de la frase “Ojo por ojo diente por diente”?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            " a) Es bueno seguirla siempre.",
+            " b) Es malo seguirla",
+            " c) Depende del momento y el lugar"
+        ]
+    },
+    {
+        "q": "¿Qué opinas de la frase “Primero yo, luego yo y al último yo”?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            " a) Es bueno seguirla siempre.",
+            " b) Es malo seguirla",
+            " c) Depende del momento y el lugar"
+        ]
+    }
+]

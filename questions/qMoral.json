@@ -1,0 +1,136 @@
+[
+    {
+        "q": "Carrera: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Ingeniería Mecánica Eléctrica.",
+            "Ingeniería Industrial.",
+            "I.T.S.E.",
+            "Licenciatura en Tecnología.",
+            "Medicina Veterinaria y Zootecnia.",
+            "Ingeniería Agrícola.",
+            "Licenciatura en Administración.",
+            "Licenciatura en Contaduría.",
+            "Licenciatura en Informática.",
+            "Diseño y Comunicación Visual"
+        ]
+    },
+    {
+        "q": "Semestre: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Edad: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Sexo: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Hombre",
+            "Mujer"
+        ]
+    },
+    {
+        "q": "Género: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Masculino",
+            "Femenino",
+            "No binario",
+            "Género fluido",
+            "Género queer",
+            "Bigénero",
+            "Transexual",
+            "Agénero",
+            "Pangénero",
+            "Genderqueer",
+            "otro"
+        ]
+    },
+    {
+        "q": "Lugar de nacimiento: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Lugar de residencia: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": " La moral es un conjunto de normas, aceptadas libre y conscientemente, que regulan la conducta individual y social de las personas, define el filósofo y escritor español Adolfo Sánchez Vázquez en su libro Ética (1984). Pero el concepto de moral no debe confundirse con el de ética, que es la teoría (o la ciencia) del comportamiento moral de las personas en sus sociedades. <br> <br> A partir de lo anterior ¿podría reconocer una situación moral en su vida cotidiana?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Considera que las normas son para todos los seres humanos y para todos los tiempos?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Esta formado en una fila y necesita llegar rápido a una cita de trabajo, pero ya es tarde, en el tercer lugar de la fila de acceso al transporte esta uno de sus amigos del colegio, usted está en el lugar cien (Tendrá que esperar al menos cuarenta minutos más), ¿Qué hace?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "a) Se acerca a su amigo para tomar un lugar con él.",
+            "b) Saluda a su amigo, pero no se acerca y conserva su lugar (se le hará tarde).",
+            "c) Su amigo le habla que se acerque, usted se acerca, lo saluda y regresa a su lugar.",
+            "d) Su amigo le habla y usted se acerca y se queda con él, uf, que suerte encontrarlo, no perderá la cita."
+        ]
+    },
+    {
+        "q": "¿Cuál es la importancia de las normas en nuestro día a día?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Podemos elegir que reglas seguir y cuáles no?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ]
+    },
+    {
+        "q": "¿Existe una relación entre las reglas que seguimos y nuestra felicidad?: ",
+        "cerrada": true,
+        "type": "text",
+        "options": [
+            "Si",
+            "No"
+        ],
+        "compuesta": {
+            "q": "¿Por qué?",
+            "cerrada": false,
+            "type": "text"
+        }
+    },
+    {
+        "q": "¿El país está siendo invadido, tenemos que unirnos para poder defendernos, pero los primeros en ser atacados son los estados del sur, existe la posibilidad de que se detenga ahí la invasión, o no, depende del apoyo que se le brinde, piden refuerzos para ir a pelear la guerra en el sur, usted tiene la opción de ir o no, ¿Qué hace? (recuerde que si pasan de los estados del sur vendrán por el resto del país, aunque los estados del sur no son precisamente su problema). ¿Se enrola.?",
+        "cerrada": true,
+        "type": "text",
+        "options": [
+            "Si",
+            "No"
+        ],
+        "compuesta": {
+            "q": "¿Por qué?",
+            "cerrada": false,
+            "type": "text"
+        }
+    }
+]

@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Arial';
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color: tomato;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.main {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-e {
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #0073ff;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background-color: #0052b6;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.questions {
+    padding: 5px;
+    background-color: #ffffff7a;
+}
+
+p {
+    padding: 5px;
+    background-color: #ffffff7a;
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        padding: 15px;
+        font-size: 4.5vw;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Estilo básico para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    /* Espacio inferior para separar de otros elementos */
+}
+
+/* Estilo para las celdas de la tabla */
+th,
+td {
+    border: 1px solid #848484;
+    border-radius: 0px;
+    /* Borde delgado y gris */
+    padding: 8px;
+    /* Espacio interno dentro de las celdas */
+    text-align: left;
+    /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para la fila encabezado (thead) */
+th {
+    background-color: #000000;
+    color: white;
+    /* Color de fondo gris claro */
+}
+
+/* Estilo para filas impares */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+    /* Color de fondo gris más claro para filas impares */
+}
+
+/* Cambio de color al pasar el mouse sobre una fila */
+tr:hover {
+    background-color: #e9e9e9;
+    /* Color de fondo gris al pasar el mouse */
+}
+
+/* Estilos para hacer la tabla responsive */
+@media (max-width: 768px) {
+
+    /* Ocultar el encabezado */
+    thead {
+        display: none;
+    }
+
+    /* Mostrar las celdas como bloques apilados */
+    tr {
+        display: block;
+        border-bottom: 1px solid #ddd;
+        /* Línea divisoria entre las filas */
+        margin-bottom: 10px;
+        /* Espacio entre las filas */
+    }
+
+    /* Estilo para las celdas en modo responsive */
+    td {
+        display: block;
+        text-align: left;
+        /* Alinear el texto a la izquierda */
+    }
+
+    /* Ajustar el tamaño del texto */
+    td:before {
+        content: attr(data-label);
+        /* Mostrar la etiqueta como contenido antes del texto */
+        font-weight: bold;
+        /* Texto en negrita */
+        float: left;
+        /* Alinear a la izquierda */
+        text-transform: uppercase;
+        /* Convertir texto a mayúsculas */
+    }
+}
