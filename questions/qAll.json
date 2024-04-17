@@ -1,0 +1,347 @@
+[
+    {
+        "q": "Carrera: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Ingeniería Mecánica Eléctrica.",
+            "Ingeniería Industrial.",
+            "I.T.S.E.",
+            "Licenciatura en Tecnología.",
+            "Medicina Veterinaria y Zootecnia.",
+            "Ingeniería Agrícola.",
+            "Licenciatura en Administración.",
+            "Licenciatura en Contaduría.",
+            "Licenciatura en Informática.",
+            "Diseño y Comunicación Visual"
+        ]
+    },
+    {
+        "q": "Semestre: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Edad: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Sexo: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Hombre",
+            "Mujer"
+        ]
+    },
+    {
+        "q": "Género: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Masculino",
+            "Femenino",
+            "No binario",
+            "Género fluido",
+            "Género queer",
+            "Bigénero",
+            "Transexual",
+            "Agénero",
+            "Pangénero",
+            "Genderqueer",
+            "otro"
+        ]
+    },
+    {
+        "q": "Lugar de nacimiento: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Lugar de residencia: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué creencias religiosas (divinas) tiene?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cuál es su ingreso familiar mensual?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "a) Hasta $7,468 (1 salario mínimo)",
+            "b) Entre $7,469 y $14,936 (2 salarios mínimos)",
+            "c) Entre $14,937 y $22,404 (3 salarios mínimos)",
+            "d) Más de $22,404 (4 o más salarios mínimos)"
+        ]
+    },
+    {
+        "q": "Leer primero: La ética es una disciplina de la filosofía que estudia el comportamiento humano y su relación con las nociones del bien y del mal, los preceptos morales, el deber, la felicidad y el bienestar común. <br> <br> A partir de lo anterior podría reconocer una situación ética en su vida cotidiana: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ]
+    },
+    {
+        "q": "Podría explicar lo bueno en tres palabras: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Podría explicar lo malo en tres palabras: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Usted piensa en su vida cotidiana sobre ¿qué es lo bueno?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cuántas veces tiene este pensamiento al día?: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Usted piensa en su vida cotidiana sobre ¿qué es lo malo?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cuántas veces tiene este pensamiento al día?: ",
+        "cerrada": false,
+        "type": "int",
+        "options": []
+    },
+    {
+        "q": "Si usted encuentra una cartera con dinero en la calle, ¿Qué hace?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "a) Se la queda.",
+            "b) Busca devolverla",
+            "c) Se la da a: 1. Policía 2. A una gente supervisora 3. Busca una comisaría",
+            "d) Si no hay forma de devolverla en el lugar que la encontró,  ¿Qué hace?",
+            "e) ¿Busca entre las identificaciones de la cartera una dirección para regresarla? (SI, NO)",
+            "f) Al final se la queda."
+        ],
+        "compuesta": {
+            "q": "¿Qué hace?",
+            "cerrada": false,
+            "type": "text"
+        }
+    },
+    {
+        "q": "Qué opina de la frase: “El fin justifica los medios”: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            " a) Es totalmente buena",
+            " b) es totalmente mala",
+            " c) depende del momento y lugar"
+        ]
+    },
+    {
+        "q": "¿Acepta el uso de violencia en defensa personal?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "En un mundo donde todos tuviéramos armas ¿Realmente podríamos defendernos?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ],
+        "compuesta": {
+            "q": "¿Por qué?",
+            "cerrada": false,
+            "type": "text"
+        }
+    },
+    {
+        "q": "¿Qué opina de la frase “Ojo por ojo diente por diente”?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            " a) Es bueno seguirla siempre.",
+            " b) Es malo seguirla",
+            " c) Depende del momento y el lugar"
+        ]
+    },
+    {
+        "q": "¿Qué opinas de la frase “Primero yo, luego yo y al último yo”?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            " a) Es bueno seguirla siempre.",
+            " b) Es malo seguirla",
+            " c) Depende del momento y el lugar"
+        ]
+    },
+    {
+        "q": " La moral es un conjunto de normas, aceptadas libre y conscientemente, que regulan la conducta individual y social de las personas, define el filósofo y escritor español Adolfo Sánchez Vázquez en su libro Ética (1984). Pero el concepto de moral no debe confundirse con el de ética, que es la teoría (o la ciencia) del comportamiento moral de las personas en sus sociedades. <br> <br> A partir de lo anterior ¿podría reconocer una situación moral en su vida cotidiana?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Considera que las normas son para todos los seres humanos y para todos los tiempos?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "Esta formado en una fila y necesita llegar rápido a una cita de trabajo, pero ya es tarde, en el tercer lugar de la fila de acceso al transporte esta uno de sus amigos del colegio, usted está en el lugar cien (Tendrá que esperar al menos cuarenta minutos más), ¿Qué hace?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "a) Se acerca a su amigo para tomar un lugar con él.",
+            "b) Saluda a su amigo, pero no se acerca y conserva su lugar (se le hará tarde).",
+            "c) Su amigo le habla que se acerque, usted se acerca, lo saluda y regresa a su lugar.",
+            "d) Su amigo le habla y usted se acerca y se queda con él, uf, que suerte encontrarlo, no perderá la cita."
+        ]
+    },
+    {
+        "q": "¿Cuál es la importancia de las normas en nuestro día a día?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Podemos elegir que reglas seguir y cuáles no?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ]
+    },
+    {
+        "q": "¿Existe una relación entre las reglas que seguimos y nuestra felicidad?: ",
+        "cerrada": true,
+        "type": "text",
+        "options": [
+            "Si",
+            "No"
+        ],
+        "compuesta": {
+            "q": "¿Por qué?",
+            "cerrada": false,
+            "type": "text"
+        }
+    },
+    {
+        "q": "¿El país está siendo invadido, tenemos que unirnos para poder defendernos, pero los primeros en ser atacados son los estados del sur, existe la posibilidad de que se detenga ahí la invasión, o no, depende del apoyo que se le brinde, piden refuerzos para ir a pelear la guerra en el sur, usted tiene la opción de ir o no, ¿Qué hace? (recuerde que si pasan de los estados del sur vendrán por el resto del país, aunque los estados del sur no son precisamente su problema). ¿Se enrola.?",
+        "cerrada": true,
+        "type": "text",
+        "options": [
+            "Si",
+            "No"
+        ],
+        "compuesta": {
+            "q": "¿Por qué?",
+            "cerrada": false,
+            "type": "text"
+        }
+    },
+    {
+        "q": "¿Qué consideraria un valor? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué valores tiene usted como principio? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué valores admira mas en otras personas? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué tipos de valores logras identificar en tu entorno? (Menciona 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Dónde se aprenden los valores?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Qué tipos de valores aplicas más? (menciona tres): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cómo se relacionan con tu futuro?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Influyen los valores en la formación de la identidad de una persona?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Es importante transmitir valores a las generaciones futuras?: ",
+        "cerrada": true,
+        "type": "",
+        "options": [
+            "Si",
+            "No"
+        ]
+    },
+    {
+        "q": "¿Cómo se deberían de transmitir?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Considera que existe una relación entre los valores y la felicidad?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Cuáles son los valores importantes en el contexto académico? (mencione 3): ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    },
+    {
+        "q": "¿Deberíamos considerar como valor hacer trampa en un examen?: ",
+        "cerrada": false,
+        "type": "text",
+        "options": []
+    }
+]

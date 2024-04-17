@@ -7,53 +7,24 @@ const rt = Router()
 //Cargar db's
 const Datastore = require('nedb-promises')
 //Creación de colecciones
-let valoresDB = Datastore.create(path.join(__dirname, 'DB', 'valores.db'))
-let moralDB = Datastore.create(path.join(__dirname, 'DB', 'moral.db'))
-let eticaDB = Datastore.create(path.join(__dirname, 'DB', 'etica.db'))
+let allDB = Datastore.create(path.join(__dirname, 'DB', 'all.db'))
 
 //Cargar colecciones de la DB
 async function loadDB() {
     try {
-        await valoresDB.load()
-        await moralDB.load()
-        await eticaDB.load()
+        await allDB.load()
         console.log('DBs cool');
     } catch (error) {
         console.log('Error al cargar las bases de datos');
     }
 }
-//Ruta para hacer registros en valoresDB
-rt.post('/cValores', async (req, res) => {
+
+//Rutas de registro
+rt.post('/cAll', async (req, res) => {
     try {
         const answer = req.body.answer
         const date = new Date()
-        await valoresDB.insert({ answer, date })
-        res.json({ msg: 200 })
-    } catch (error) {
-        res.json({ err: 500 })
-    }
-
-})
-
-//Ruta para hacer registros en moralDB
-rt.post('/cMoral', async (req, res) => {
-    try {
-        const answer = req.body.answer
-        const date = new Date()
-        await moralDB.insert({ answer, date })
-        res.json({ msg: 200 })
-    } catch (error) {
-        res.json({ err: 500 })
-    }
-
-})
-
-//Ruta para hacer registros en eticaDB
-rt.post('/cEtica', async (req, res) => {
-    try {
-        const answer = req.body.answer
-        const date = new Date()
-        await eticaDB.insert({ answer, date })
+        await allDB.insert({ answer, date })
         res.json({ msg: 200 })
     } catch (error) {
         res.json({ err: 500 })
@@ -62,34 +33,32 @@ rt.post('/cEtica', async (req, res) => {
 })
 
 //Ruta para ver los datos
-rt.get('/rValores', async (req, res) => {
-    const data = await valoresDB.find({})
+rt.get('/rAll', async (req, res) => {
+    const data = await allDB.find({})
     res.json(data)
 })
 
-rt.get('/rMoral', async (req, res) => {
-    const data = await moralDB.find({})
-    res.json(data)
-})
-
-rt.get('/rEtica', async (req, res) => {
-    const data = await eticaDB.find({})
-    res.json(data)
+//Ruta par enviar las preguntas al frontend
+rt.get('/qAll', (req, res) => {
+    res.json(require(path.join(__dirname, 'questions', 'qAll.json')))
 })
 
 
-//Rutas para enviar las preguntas del formulario
-rt.get('/qMoral', (req, res) => {
-    res.json(require(path.join(__dirname, 'questions', 'qMoral.json')))
+//Ruta para borrar un registro
+rt.post("/delete", async (req, res) => {
+    try {
+        let code = parseInt(req.body.code)
+        if (code == 3210) {
+            let ID = req.body.ID
+            await allDB.deleteOne({ _id: ID, })
+            res.json({ msg: 200 })
+        }else{
+            res.json({msg: "Sin autorización para borrar"})
+        }
+    } catch (error) {
+        res.json(error)
+    }
 })
-
-rt.get('/qEtica', (req, res) => {
-    res.json(require(path.join(__dirname, 'questions', 'qEtica.json')))
-})
-rt.get('/qValores', (req, res) => {
-    res.json(require(path.join(__dirname, 'questions', 'qValores.json')))
-})
-
 
 
 

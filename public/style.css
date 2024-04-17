@@ -17,8 +17,8 @@ input,
 textarea,
 select {
     width: 100%;
-    padding: 10px;
-    margin-top: 15px;
+    padding: 8px;
+    margin-top: 16px;
     margin-bottom: 15px;
     border: 1px solid #000000;
     border-radius: 4px;
@@ -26,7 +26,7 @@ select {
 }
 
 input[type="button"] {
-    background-color: tomato;
+    background-color: #ff6347;
     color: #ffffff;
     padding: 12px 20px;
     border: none;
@@ -38,15 +38,15 @@ input[type="button"] {
 
 .main {
     max-width: 600px;
-    margin: 10px auto;
+    margin: 0px auto;
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .main-e {
-    max-width: 95%;
+    max-width: 98%;
     margin: 10px auto;
     padding: 20px;
     background-color: #ffffff;
@@ -58,10 +58,15 @@ label {
     text-align: left;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
+    color: white;
+}
+
+.borrar{
+    background-color: #ff6347;
     color: white;
 }
 
@@ -89,7 +94,8 @@ a:hover {
 
 p {
     padding: 5px;
-    background-color: #ffffff7a;
+    border-radius: 10px;
+    background-color: #ffffff81;
     margin: 5px auto;
     font-size: 18px;
 }
@@ -125,13 +131,14 @@ td {
     /* Espacio interno dentro de las celdas */
     text-align: left;
     /* Alineación del texto a la izquierda */
+    border: 2px black solid;;
 }
 
 /* Estilo para la fila encabezado (thead) */
 th {
-    background-color: #000000;
+    background-color: #1A73CE;;
     color: white;
-    /* Color de fondo gris claro */
+    min-width: 155px;
 }
 
 /* Estilo para filas impares */

@@ -28,47 +28,55 @@ const Send = async (url, method, data) => {
 
 
 $(document).ready(async () => {
-    $("#opt").on('input', async () => {
-        let option = parseInt($("#opt").val())
-        await loadData(option)
+    await loadData()
+    setInterval(async () => {
+        await loadData()
+    }, 1000 * 60);//Actualiza información cada 60 segundos
+    $("#body").on("click", ".borrar", async (e) => {
+        let ID = e.target.id
+        let code = parseInt(prompt("Ingrese el código de verificación: "))
+        await borrar(ID, code)
     })
-    await loadData(1)
-
 })
 
-async function loadData(cuestionario) {
-    var questions, data
+
+async function borrar(ID, code) {
+    let res = await Send("/api/delete", 'POST', { ID: ID, code: code })
+    if (res.msg == 200) {
+        alert("Elemento borrado")
+        await loadData()
+    } else {
+        alert(res.msg)
+    }
+}
+
+async function loadData() {
+    var questions, data;
+    var cuenta = 0
     //Limpiar tabla
     $("#head").empty()
     $("#body").empty()
-    //Pedir información dependiendo
-    switch (cuestionario) {
-        case 1:
-            //Etica fetch
-            questions = await Send('/api/qEtica', 'GET')
-            data = await Send('/api/rEtica', 'GET')
-            break;
-        case 2:
-            //Moral
-            questions = await Send('/api/qMoral', 'GET')
-            data = await Send('/api/rMoral', 'GET')
-            break;
-        case 3:
-            //Valores
-            questions = await Send('/api/qValores', 'GET')
-            data = await Send('/api/rValores', 'GET')
-            break
-        default:
-            alert("Invalido")
-            break;
-    }
+    $("#cuenta").empty()
+    //Pedir información al servidor
+    //Preguntas
+    questions = await Send('/api/qAll', 'GET')
+    //Respuestas
+    data = await Send('/api/rAll', 'GET')
+
     //Cargar preguntas en el head
     questions.forEach(q => {
         $("#head").append(`<th>${q.q}</th>`)
     });
-    console.table(data[0].answer);
-    data[0].answer.forEach(q => {
-        $("#body").append(`<td>${q}</td>`)
+    $("#head").append(`<th>Borrar</th>`)
 
+    //Mostrar las respuestas en la tabla
+    data.forEach((d, index) => {
+        cuenta++
+        $("#body").append(`<tr id="d${index}"></tr>`)
+        d.answer.forEach(q => {
+            $(`#d${index}`).append(`<td>${q}</td>`)
+        });
+        $(`#d${index}`).append(`<td><input type="button" id="${d._id}" class="borrar" value="Borrar"/></td>`)
     });
+    $("#cuenta").append(`[${cuenta}]`)
 }
