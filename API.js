@@ -7,7 +7,7 @@ const rt = Router()
 //Cargar db's
 const Datastore = require('nedb-promises')
 //Creación de colecciones
-let allDB = Datastore.create(path.join(__dirname, 'DB', 'all.db'))
+let allDB = Datastore.create(path.join(__dirname, 'all.db'))
 
 //Cargar colecciones de la DB
 async function loadDB() {
