@@ -76,6 +76,23 @@ $(document).ready(async () => {
                             alert("No se guardo!!")
                         }
                     }
+                } else {
+                    //Logica para enviar la información al servidor
+                    let res = await Send('api/cAll', 'POST', { answer: formData })
+                    if (res.msg == 200) {
+                        alert("Información guardada correctamente.")
+                        loadQuesions(questions)
+
+                        //Para subir al comienzo del formulario
+                        window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth'
+                        });
+
+                    } else {
+                        alert("No se guardo!!")
+                    }
                 }
 
 
