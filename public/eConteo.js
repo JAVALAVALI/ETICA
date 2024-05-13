@@ -48,7 +48,7 @@ function procesarDatos(data, questions) {
             });
             //Mostrar tabala de frecuencia
             var $table = $('<table>').addClass('frequencyTable');
-            var $thead = $('<thead>').append($('<tr>').append($('<th>').attr('colspan', '2').text(u + ") " + questions[u].q)));
+            var $thead = $('<thead>').append($('<tr>').append($('<th>').attr('colspan', '2').text((u+1) + ") " + questions[u].q)));
             var $tbody = $('<tbody>');
 
             $.each(responseCounts, function (response, count) {
@@ -72,7 +72,7 @@ function procesarDatos(data, questions) {
             
             //Mostrar tabala de frecuencia
             var $table = $('<table>').addClass('frequencyTable');
-            var $thead = $('<thead>').append($('<tr>').append($('<th>').attr('colspan', '2').text(u + ") " +questions[u].q)));
+            var $thead = $('<thead>').append($('<tr>').append($('<th>').attr('colspan', '2').text((u+1) + ") " +questions[u].q)));
             var $tbody = $('<tbody>');
 
             $.each(responseCounts, function (response, count) {
