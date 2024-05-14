@@ -31,7 +31,7 @@ $(document).ready(async () => {
     await loadData()
     setInterval(async () => {
         await loadData()
-    }, 1000 * 60);//Actualiza información cada 60 segundos
+    }, 1000 * 660);//Actualiza información cada 660 segundos
     $("#body").on("click", ".borrar", async (e) => {
         let ID = e.target.id
         let code = parseInt(prompt("Ingrese el código de verificación: "))
